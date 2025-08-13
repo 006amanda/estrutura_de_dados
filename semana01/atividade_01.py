@@ -1,6 +1,5 @@
 # Dado um vetor de números inteiros, mova todos os elementos com valor zero para o final do vetor, preservando a ordem dos demais elementos.
 
-```bash
 numeros = [0, 5, 3, 0, 8, 0, 7, 2, 0, 4, 6, 0, 9, 1, 0]
 
 resultado = []
