@@ -10,7 +10,6 @@ class Livro:
         else:
             return "O livro é longo"
 
-
 livro1 = Livro("O Menino do Pijama Listrado", "John Boyne", 192)
 livro2 = Livro("O Príncipe", "Nicolau Maquiavel", 96)
 
