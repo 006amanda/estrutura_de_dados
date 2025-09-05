@@ -5,10 +5,10 @@ class No:
         self.anterior = None
 
 def menu():
-    print("1 - Inserir nó")
-    print("2 - Listar nós")
-    print("3 - Remover nó")
-    print("4 - Verificar se nó existe")
+    print("1 - Inserir")
+    print("2 - Listar")
+    print("3 - Remover")
+    print("4 - Verificar")
     print("5 - Sair")
     opcao = int(input("Digite uma opção: "))
     return opcao
@@ -57,7 +57,7 @@ def removerNo(lista, nome):
 
 def verificarNo(lista):
     print("1 - Buscar por nome")
-    print("2 - Buscar por posição na lista")
+    print("2 - Buscar por identificador")
     escolha = int(input("Digite uma opção: "))
 
     if escolha == 1:
@@ -65,7 +65,7 @@ def verificarNo(lista):
         elemento = lista
         while elemento is not None:
             if elemento.nome == nome:
-                print("Nó encontrado -> Nome:", elemento.nome)
+                print("Nó encontrado -> Nome: ", elemento.nome)
                 return
             elemento = elemento.proximo
         print("Nó não encontrado")
@@ -76,7 +76,7 @@ def verificarNo(lista):
         atual = 1
         while elemento is not None:
             if atual == posicao:
-                print("Nó encontrado -> Nome:", elemento.nome)
+                print("Nó encontrado -> Nome: ", elemento.nome)
                 return
             elemento = elemento.proximo
             atual += 1
