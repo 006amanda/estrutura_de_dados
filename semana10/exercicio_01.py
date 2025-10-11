@@ -8,7 +8,6 @@ class Deque:
     def __init__(self):
         self.inicio = None 
         self.fim = None 
-        self.tamanho = 0 
 
     def inserir_inicio(self, chamado):
         novo = Node(chamado)
@@ -19,7 +18,6 @@ class Deque:
             novo.proximo = self.inicio 
             self.inicio.anterior = novo 
             self.inicio = novo
-        self.tamanho += 1 
         print(chamado, " - Chamado adicionado.")
     
     def inserir_fim(self, chamado):
@@ -31,7 +29,6 @@ class Deque:
             novo.anterior = self.fim 
             self.fim.proximo = novo 
             self.fim = novo 
-        self.tamanho += 1 
         print(chamado, " - Chamado adicionado.")
     
     def remover_fim(self):
@@ -43,7 +40,6 @@ class Deque:
             self.fim.proximo = None 
         else: 
             self.inicio = None 
-        self.tamanho -= 1 
         print("Chamado deletado.")
 
     def remover_inicio(self):
@@ -55,7 +51,6 @@ class Deque:
             self.inicio.anterior = None 
         else:
             self.fim = None 
-        self.tamanho -= 1
         print("Chamado deletado.")
 
     def listar(self):
@@ -97,5 +92,5 @@ def main():
             deque.listar()
         elif opcao == 6:
             print("Saindo do sistema...")
-            
+
 main()
