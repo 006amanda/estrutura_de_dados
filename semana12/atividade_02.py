@@ -124,6 +124,5 @@ def main():
             print()
             print()
         elif opc == 9:
-            print("Encerrando o programa...")
-    
+            print("Encerrando o programa...")  
 main()
